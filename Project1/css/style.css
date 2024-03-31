@@ -7,65 +7,33 @@
 body {
     background-color: aquamarine;
     color: aliceblue;
-
-}
-
-.intro {
-    height: 200vh;
-    background: linear-gradient(#d12620, #2c20d1);
-}
-
-.navbar {
-    background-color: #b71d1d;
-    overflow: hidden;
     font-family: Copperplate;
-  }
   
- 
-  .navbar a {
-    float: left;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
+}
 
-  .navbar a:hover {
-    background-color: #0444aa;
-    color: rgb(255, 255, 255);
-  }
-  
-  .navbar a.active {
+.backgr{
+
+  background: linear-gradient(#d12620, #2c20d1);
+}
+
+.logo1 {
+
+  width: 100%;
+  height: 100%;
+}
+
+.batn{
+  background-color: #ffffff;
+  border-color: #d12620;
+}
+.intro {
+    height: 600%;
     background: linear-gradient(#d12620, #2c20d1);
-    color: rgb(255, 255, 255);
-  }
+}
 
-  ul {
-    list-style-type: none;
-    margin: 10px;
-    padding: 0;
-    overflow: hidden;
-    background: linear-gradient(#d12620, #2c20d1);
-  }
-  
-  li {
-    float: left;
-
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #af2121;
-  }
+.justify{
+  justify-content: space-between;
+}
 
   p.big {
     line-height: 1.8;
@@ -86,18 +54,48 @@ body {
   
   div.gallery {
     margin: 20px;
-    border: 3px solid #d01212;
+    border: 3px solid #ffffff;
     float: left;
-    width: 350px;
+    width: 410px;
   }
   
-  div.gallery:hover {
-    border: 1px solid #b70d0d;
-  }
   
   div.gallery img {
     width: 100%;
     height: auto;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: Copperplate;
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  div.gallery1 {
+    margin: 30px;
+    border: 3px solid #ffffff;
+    float: left;
+    width: 410px;
+  }
+  
+  div.gallery1:hover {
+    border: 1px solid #ffffff;
+  }
+  
+  div.gallery1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: Copperplate;
   }
   
   .clearfix:after {
@@ -138,8 +136,154 @@ body {
     color: white;
   }
   
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+  }
   
-    
+  button {
+    background-color: #2c11c5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
   
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #dc2114;
+  }
+  
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  img.avatar {
+    margin-top: 10px;
+    width: 20%;
+    border-radius: 20%;
+  }
   
 
+  .container {
+    padding: 16px;
+    
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+  video {
+
+    margin-top: 10px;
+    width: 70%;
+    height: 30%;
+    position: center;
+
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+th {
+    background-color: linear-gradient(#d12620, #2c20d1);;
+}
+
+.welcome{
+
+  width: 50%;
+  height: 50%;
+}
+
+.schedule{
+
+  margin: 10px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+article {
+  margin-bottom: 20px;
+}
+h2 {
+  color: #e6e3e3;
+}
+p {
+  margin-bottom: 10px;
+}
+ul {
+  margin-bottom: 10px;
+}
+
+.content {
+
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+}
+
+
+.grid-container{
+
+  margin: 10px;
+  border-color: #ffffff;
+}
+
+
+.head1 {
+
+  color: blue;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);;
+}
+
+.head2 {
+
+  color: #dc2114;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);;
+  
+}
+
+.fade-in {
+  animation: fade-in 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
