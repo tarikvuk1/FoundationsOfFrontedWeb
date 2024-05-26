@@ -28,11 +28,6 @@ body {
   border-color: #d12620;
 }
 
-.intro {
-    height: 600%;
-    background: linear-gradient(#d12620, #2c20d1);
-}
-
 .justify{
   justify-content: space-between;
 }
@@ -309,20 +304,14 @@ ul {
   background-color: #0056b3;
 }
 
-body.light-theme {
-  background-color: #ffffff;
-  color: #000000;
+body {
+  background-color: white;
+  color: black;
+  font-size: 16px;
 }
-
-
-body.dark-theme {
-  background-color: #333333;
-  color: #ffffff;
+.container {
+  margin: 20px;
 }
-
-.theme-switcher button,
-.font-size-switcher button {
-    margin: 5px;
-    padding: 10px;
-    cursor: pointer;
+.theme-switcher {
+  margin-bottom: 20px;
 }

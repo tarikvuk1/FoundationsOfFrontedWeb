@@ -13,17 +13,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const lightThemeBtn = document.getElementById('light-theme-btn');
-    const darkThemeBtn = document.getElementById('dark-theme-btn');
+$(document).ready(function() {
+    // Theme switcher
+    $('#theme').on('change', function() {
+        var theme = $(this).val();
+        switch(theme) {
+            case 'dark':
+                $('body').css({
+                    'background-color': 'black',
+                    'color': 'white'
+                });
+                break;
+            case 'light':
+                $('body').css({
+                    'background-color': 'white',
+                    'color': 'black'
+                });
+                break;
+        }
     });
-    
-    lightThemeBtn.addEventListener('click', function () {
-        document.body.classList.add('light-theme');
-        document.body.classList.remove('dark-theme');
-    });
-
-    darkThemeBtn.addEventListener('click', function () {
-        document.body.classList.add('dark-theme');
-        document.body.classList.remove('light-theme');
     });
