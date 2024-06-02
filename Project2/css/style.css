@@ -17,6 +17,12 @@ body {
   background: linear-gradient(#d12620, #2c20d1);
 }
 
+.intro{
+
+  height: 600%;
+  background: linear-gradient(#d12620, #2c20d1);
+}
+
 .logo1 {
 
   width: 100%;
@@ -304,14 +310,20 @@ ul {
   background-color: #0056b3;
 }
 
-body {
-  background-color: white;
-  color: black;
-  font-size: 16px;
+.content-section {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
 }
-.container {
-  margin: 20px;
+.toggle-button {
+  cursor: pointer;
+  color: rgb(204, 204, 204);
+  text-decoration: underline;
 }
-.theme-switcher {
-  margin-bottom: 20px;
+.toggle-button::after {
+  content: ' [+]';
+}
+.toggle-button.expanded::after {
+  content: ' [-]';
 }

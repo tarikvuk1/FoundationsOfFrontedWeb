@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </head>
     <body class="intro">
 <section>
@@ -43,11 +49,30 @@
       </div>
     
       <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="uname"><b>Username:</b></label>
+        <input type="text" name="uname" required>
     
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <div id="password-strength" class="password-strength"></div>
+      </div>
+      <div>
+          <label for="confirm_password">Confirm Password:</label>
+          <input type="password" id="confirm_password" name="confirm_password" required>
+      </div>
+
+        <div>
+          <label for="birthdate">Birth Date:</label>
+          <br>
+          <input type="date" id="birthdate" name="birthdate" required>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+    </div>
     
         <button type="submit">Login</button>
         <label>
@@ -68,6 +93,35 @@
           <h1><center>Follow FC Barcelona on social media</center></h1>
           </div>
         <br>
+        <div class="container">
+          <h1>FAQs</h1>
+          <div class="faq-item">
+              <div class="toggle-button">What is your return policy?</div>
+              <div class="content-section">
+                  Our return policy allows for returns within 30 days of purchase with a valid receipt.
+              </div>
+          </div>
+          <div class="faq-item">
+              <div class="toggle-button">Do you offer international shipping?</div>
+              <div class="content-section">
+                  Yes, we offer international shipping to most countries. Shipping costs may vary.
+              </div>
+          </div>
+    
+          <h1>Product Descriptions</h1>
+          <div class="product-item">
+              <div class="toggle-button">Product 1 Details</div>
+              <div class="content-section">
+                  Product 1 is a high-quality item that offers great value for money. It is available in multiple colors and sizes.
+              </div>
+          </div>
+          <div class="product-item">
+              <div class="toggle-button">Product 2 Details</div>
+              <div class="content-section">
+                  Product 2 features advanced technology and a sleek design, making it a popular choice among customers.
+              </div>
+          </div>
+      </div>
         <footer><center>
           
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
